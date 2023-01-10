@@ -5,14 +5,21 @@ function palindroma(parola){
     return parola.split("").reverse().join("");
 }
 
-let stringa = prompt('Inserisci una parola');
+var answer;
 
-if(stringa == palindroma(stringa)){
-    alert("La parola è palindroma");
+do{
+
+    let stringa = prompt('Inserisci una parola');
+
+    if(stringa == palindroma(stringa)){
+        alert("La parola è palindroma");
+    }
+    else{
+        alert("La parola non è palindroma");
+    }
+
+    answer = prompt("Vuoi inserire un altra parola : y or n");
 }
-else if(isNaN(stringa)){
-    alert("Hai inserito una parola non valida");
-}
-else{
-    alert("La parola non è plaindroma");
-}
+
+while(answer == "y");
+

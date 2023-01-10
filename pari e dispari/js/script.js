@@ -2,8 +2,7 @@ let submit = document.getElementById("submit");
 let reset = document.getElementById("reset");
 
 submit.onclick = function(){
-
-
+    
     let nameUser = document.getElementById("nameUser").value;
     let num = document.getElementById("number").value;
     let choose = document.getElementById("choose").value;
@@ -41,8 +40,4 @@ submit.onclick = function(){
         }
 
     }
-
-
-
-
 }
