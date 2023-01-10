@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pari o Dispari</title>
+    </head>
+    <body>
+        <h1>Pari e Dispari</h1>
+        <form class="square" action="index.html" novalidate>
+
+            <div class="name">
+                <label for="nameUser">Nome Cognome</label>
+                <input type="text" id="nameUser" name="nameUser" placeholder="Jon Snow" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="number">
+                <label for="number">Numero</label>
+                <input type="number" id="number" name="number" min="1" max="5" required>
+                <div class="error"></div>
+            </div>
+        
+            <div class="check">
+        
+                <label for="choose">Scelta</label>
+                <select name="choose" id="choose" required>
+                    <option value="">Seleziona...</option>
+                    <option value="Pari">Pari</option>
+                    <option value="Dispari">Dispari</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class="btn-square">
+                <input type="button" value="Gioca" id="submit">
+                <input type="reset" value="Annulla" id="reset">
+            </div>
+
+        </form> 
+        <script src="./js/script.js"></script>
+    </body>
+</html>
